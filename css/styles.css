@@ -906,7 +906,9 @@ img {
   opacity: 0;
   pointer-events: none;
 }
-
+.backgrop {
+  
+}
 .backgrop {
   position: fixed;
   left: 0;
@@ -915,22 +917,35 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  transition: visibility var(--time) var(--type-transition), opacity var(--time) var(--type-transition);
+  -webkit-transition: visibility var(--time) var(--type-transition), opacity var(--time) var(--type-transition);
+  -moz-transition: visibility var(--time) var(--type-transition), opacity var(--time) var(--type-transition);
+  -ms-transition: visibility var(--time) var(--type-transition), opacity var(--time) var(--type-transition);
+  -o-transition: visibility var(--time) var(--type-transition), opacity var(--time) var(--type-transition);
+}
+.backgrop.is-hidden .modal{
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .modal {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 528px;
   background-color: #fff;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition: transform var(--time) var(--type-transition);
+  -webkit-transition: transform var(--time) var(--type-transition);
+  -moz-transition: transform var(--time) var(--type-transition);
+  -ms-transition: transform var(--time) var(--type-transition);
+  -o-transition: transform var(--time) var(--type-transition);
 }
 .modal__close {
   position: absolute;
