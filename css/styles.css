@@ -817,7 +817,6 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
 
-  margin-bottom: 20px;
 }
 
 .footer__input{
@@ -834,6 +833,8 @@ img {
   letter-spacing: 0.03em;
   
   color: rgba(255, 255, 255, 0.6);
+
+  margin-top: 20px;
 
 }
 
@@ -993,6 +994,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 0 12px 42px;
+  margin-top: 4px;
 }
 
 .form__field label{
@@ -1005,11 +1007,13 @@ img {
   color: var(--grey-color);
 
   margin-bottom: 4px;
-}
-.form__field{
   margin-bottom: 28px;
   display: flex;
   flex-direction: column;
+
+  position: relative;
+}
+.form__filed{
   position: relative;
 }
 
@@ -1060,6 +1064,7 @@ input[type="checkbox"]{
 
 textarea{
   margin: 0;
+  margin-top: 4px;
   padding: 0;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1074,6 +1079,7 @@ textarea{
 .agree{
   display:block;
   margin-left: 10px;
+  padding-bottom: 4px;
 }
 .comment::placeholder{
   margin: 0;
@@ -1088,12 +1094,11 @@ textarea{
 
 .form-icon{
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 14px;
   width: 18px;
   height: 18px;
 }
-
 
 .form-input:focus ~ .icon{
   fill: var(--blue-color);
